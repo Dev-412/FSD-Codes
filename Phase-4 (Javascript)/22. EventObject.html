@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body onkeydown="kc(event)">
+    <!-- onkeypress=kc(event) for keys a to z only onkeydown for all keys like ctrl and enter -->
+    <select onchange="fun(event)">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+    </select>
+
+    <script>
+        function fun(e) {
+            alert(e.target.value)
+        }
+        function kc(e) {
+            alert("key pressed: " + e.key) //e.keyCode
+        }
+    </script>
+</body>
+
+</html>
