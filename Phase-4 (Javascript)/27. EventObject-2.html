@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div style="width:100px;height:100px;background-color: tomato;" onmousedown="fun(event)">
+    </div>
+    <script>
+        function fun(e) {
+            val = e.button
+            if (val == 0) {
+                alert("left clicked")
+            }
+            else if (val == 1) {
+                alert("center clicked")
+            }
+            else {
+                alert("right clicked")
+            }
+        }
+    </script>
+</body>
+
+</html>

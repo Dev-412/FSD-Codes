@@ -1,0 +1,33 @@
+<!-- write a js which include one input field and empty button
+if field is empty alert will popup with text enter something otherwise it will show fields value -->
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="#" name="f1" onsubmit="fun()">
+        Enter Name <input type="text" name="fname" id="a">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function fun() {
+            a = document.getElementById('a').value
+            if (a.length != 4) {
+                alert("Enter Something")
+            }
+
+            else if (isNaN(a)) {
+                alert("Enter Something")
+            }
+            else {
+                document.write(a)
+            }
+        }
+    </script>
+</body>
+
+</html>

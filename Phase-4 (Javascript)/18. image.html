@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+        </script>
+    </head>
+    <body>
+        <img id="img1">
+        <button onclick="fun1()">Click</button>
+        <script>
+            let i=0
+            function fun1(){
+                if(i%2==0){
+                    document.getElementById("img1").setAttribute("src","Krishna.png")
+                    i+=1;
+                }
+                else{
+                    document.getElementById("img1").setAttribute("src","4436147.jpg")
+                    i+=1;
+                }
+            }
+        </script>
+
+        <!-- <p id='p1' title="Demo txt">Hello</p>
+        <script>
+            document.getElementById("p1").removeAttribute("title") 
+            // shows null bcoz we removed the attribute
+            alert(document.getElementById("p1").getAttribute("title"))
+        </script> -->
+    </body>
+</html>
+

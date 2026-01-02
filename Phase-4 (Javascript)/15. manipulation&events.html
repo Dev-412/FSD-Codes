@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                document.getElementById('a').innerHTML="How Are You"
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="fun()" value="change">
+        <p id="a">Hello</p>
+        <p class="b">Hello1</p>
+        <p class="b">Hello2</p>
+        <!-- Script should be at bottom to check value after body -->
+        <script>
+            let x=document.getElementsByClassName('b')
+            // x[0].innerHTML="loop require to change all class inner HTML"
+
+            for(i=0; i<x.length;i++){
+                x[i].innerHTML="I am applied on all"
+            }
+        </script>
+    </body>
+</html>
+
+<!-- css selectors
+element (P)
+id (#)
+class (.)
+combination (div p) -->
