@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="a">
+    <input type="submit" onclick="fun()">
+    <script>
+        function fun() {
+            pat = /abc/
+            u = document.getElementById('a').value
+            if (pat.test(u)) {
+                alert('perfect')
+            }
+            else {
+                alert('Not Allowed')
+            }
+        }
+    </script>
+</body>
+
+</html>
