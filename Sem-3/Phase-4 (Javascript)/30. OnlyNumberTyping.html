@@ -1,0 +1,20 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="a">
+    <script>
+        let input = document.querySelector('#a')
+        input.addEventListener('keydown', (e) => {
+            if (isNaN(e.key)) {
+                e.preventDefault()
+            }
+        })
+    </script>
+</body>
+
+</html>

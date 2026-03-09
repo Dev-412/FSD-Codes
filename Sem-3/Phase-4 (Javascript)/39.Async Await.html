@@ -1,0 +1,31 @@
+write a function that return a proise which resolves a number after 1 second use a loop with async await to get values
+from 1 to 3 print doubled result of each value
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function Pn(num) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(num * 3)
+                }, 1000)
+            })
+        }
+
+        async function gn() {
+            for (let i = 1; i <= 3; i++) {
+                let input = prompt('Enter' + i)
+                let number = Number(input)
+                let result = await Pn(number)
+                console.log('Triple: ', result)
+            }
+        }
+        gn()
+    </script>
+</body>
+
+</html>

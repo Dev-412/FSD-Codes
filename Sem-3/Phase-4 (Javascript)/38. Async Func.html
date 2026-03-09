@@ -1,0 +1,43 @@
+<!-- create a form with 3 field product price discount and save button which match folln requirements
+when user clicks save store the entered value into localStorage after saving display message data saved sucessfully
+add another button remove discount that removes only discount field from local storage
+after removal display remaining data in the console -->
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function fetchdata() {
+            return new Promise((resolve, reject) => {
+                console.log('waiting.....')
+                setTimeout(() => {
+                    let success = true
+                    if (success) {
+                        resolve('order complete')
+                    }
+                    else {
+                        reject('order failed')
+                    }
+                }, 5000);
+
+            })
+        }
+        console.log('order placed')
+
+        async function getData() {
+            try {
+                let result = await fetchdata()
+                console.log(result)
+            }
+            catch (error) {
+                console.log("Error", error)
+            }
+        }
+        getData()
+    </script>
+</body>
+
+</html>

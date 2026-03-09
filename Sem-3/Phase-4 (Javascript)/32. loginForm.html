@@ -1,0 +1,33 @@
+design a login form
+minimum length of pass must be of 8 letters and it must hv some special characters
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <form>
+        <p>Login Form</p>
+        <input type="text" placeholder="password" id="a">
+    </form>
+    <script>
+        function fun() {
+            pat = /\w/
+            u = document.getElementById('a').value
+            if (u.length < 8) {
+                alert('PWD must be of 8 digit')
+            }
+            else if (pat.test(u) == 0) {
+                alert('Must Contain Special Char')
+            }
+            else {
+                alert('perfect')
+            }
+        }
+    </script>
+</body>
+
+</html>

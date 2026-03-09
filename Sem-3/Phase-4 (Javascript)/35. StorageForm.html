@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>Login</h2>
+    <input type="text" id="a">
+    <button onclick="saveu()">Save</button>
+    <button onclick="showu()">Show</button>
+    <button onclick="clearu()">Clear</button>
+    <p id="out"></p>
+    <script>
+        function saveu() {
+            let user = document.getElementById('a').value
+            localStorage.setItem('uname', user)
+            sessionStorage.setItem('uname', user)
+        }
+        function showu() {
+            let luser = localStorage.getItem('uname')
+            let suser = sessionStorage.getItem('uname')
+            document.getElementById('out').innerHTML = 'Local: ' + luser + "<br>Session: " + suser;
+        }
+        function clearu() {
+            localStorage.clear()
+            sessionStorage.clear()
+            document.getElementById('out').innerHTML = 'Cleared!';
+        }
+    </script>
+</body>
+
+</html>
